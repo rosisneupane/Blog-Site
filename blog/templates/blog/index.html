@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    My Blog
+{% endblock title %}
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}"/>
+{% endblock css_files %}
+{% block content %}
+    <header id="main-navigation">
+        <h1><a href="">Rosis Blog</a></h1>
+        <nav>
+            <a href="">All Posts</a>
+        </nav>
+    </header>
+    <section id="welcome">
+        <header>
+            <img src="" alt="Rosis Blog"/>
+            <h2>Rosis Blog</h2>
+        </header>
+        <p>I am rosis don dai </p>
+    </section>
+    <section id="latest-posts">
+        <h2>My latest thoughts</h2>
+        <ul>
+           <li> 
+                <article class="post">
+                    <a href="">
+                        <img src="" alt="mountain biking"/>
+                        <div class="post__content">
+                            <h3>Mountain Hiking</h3>
+                            <p>wow so lovely mountains i love it</p>
+                        </div>
+                    </a>
+                </article> 
+            </li> 
+        </ul>
+    </section>
+
+    <section id="about">
+
+        <h2>About us</h2>
+        <p>i love programming it is fun</p>
+    </section>
+{% endblock content %}
